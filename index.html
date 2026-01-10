@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGO Dashboard - Kids Learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --logo-green: #22c55e;
+            --logo-blue: #0ea5e9;
+            --logo-dark: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8fafc;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--logo-green), var(--logo-blue));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 { margin: 0; font-size: 2.5rem; }
+        .header p { margin: 10px 0 0; font-size: 1.2rem; opacity: 0.9; }
+
+        .container {
+            max-width: 1200px;
+            margin: -30px auto 50px;
+            padding: 0 20px;
+        }
+
+        .module-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* LOGO Card Style */
+        .logo-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: var(--logo-green);
+        }
+
+        .icon-box {
+            width: 70px;
+            height: 70px;
+            background: #f0fdf4;
+            color: var(--logo-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            margin: 0 auto 15px;
+        }
+
+        .logo-card h3 {
+            margin: 10px 0;
+            color: var(--logo-dark);
+            font-size: 1.3rem;
+        }
+
+        .logo-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        .lang-en {
+            display: block;
+            font-style: italic;
+            color: var(--logo-blue);
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            border-top: 1px dashed #e2e8f0;
+            padding-top: 10px;
+        }
+
+        .btn-enter {
+            display: inline-block;
+            background: var(--logo-green);
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn-enter:hover {
+            background: var(--logo-dark);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* Special Highlights */
+        .special-card { border-color: #d4af37; background: #fffcf0; }
+        .special-card .icon-box { background: #fff7ed; color: #d4af37; }
+
+        .command-card { border-color: var(--logo-blue); background: #f0f9ff; }
+        .command-card .icon-box { background: #e0f2fe; color: var(--logo-blue); }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>🐢 MSW Logo Learning Path</h1>
+        <p>কোডিংয়ের দুনিয়ায় স্বাগতম! (Welcome to the World of Coding!)</p>
+    </div>
+
+    <div class="container">
+        <div class="module-grid">
+            
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                <h3>মডিউল ১: Turtle-এর সাথে বন্ধুত্ব</h3>
+                <p>LOGO কী এবং Turtle-কে কীভাবে নির্দেশ দিতে হয় তা জানো।</p>
+                <span class="lang-en">Meet your Turtle & learn basic commands (CS, HT).</span>
+                <a href="m-logo-intro.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-walking"></i></div>
+                <h3>মডিউল ২: Turtle হাঁটা শেখে</h3>
+                <p>সামনে এবং পিছনে যাওয়ার কমান্ডগুলো প্র্যাকটিস করো।</p>
+                <span class="lang-en">Move Forward (FD) and Backward (BK) with Turtle.</span>
+                <a href="m-logo-walk.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-redo"></i></div>
+                <h3>মডিউল ৩: Turtle মোড় নেয়</h3>
+                <p>ডানে এবং বামে ঘোরার মাধ্যমে দিক পরিবর্তন শেখো।</p>
+                <span class="lang-en">Learn Turning commands (RT, LT) to draw L-shape.</span>
+                <a href="m-logo-turn.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-magic"></i></div>
+                <h3>মডিউল ৪: পেন (Pen) জাদু</h3>
+                <p>দাগ ছাড়া চলাফেরা করার জন্য পেন তোলা ও নামানো শেখো।</p>
+                <span class="lang-en">The magic of Pen Up (PU) and Pen Down (PD).</span>
+                <a href="m-logo-pen.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-font"></i></div>
+                <h3>মডিউল ৫: সোজা লাইনের অক্ষর</h3>
+                <p>I, L এবং T অক্ষরগুলো ড্রয়িং করা শিখবো।</p>
+                <span class="lang-en">Drawing straight letters like I, L, and T.</span>
+                <a href="m-logo-letters-base.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                <h3>মডিউল ৬: Letter M আঁকা</h3>
+                <p>Zigzag লাইন এবং কোণা তৈরি করা শেখো।</p>
+                <span class="lang-en">Create the letter M using zigzag patterns.</span>
+                <a href="m-logo-letter-m.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-stream"></i></div>
+                <h3>মডিউল ৭: Letter S আঁকা</h3>
+                <p>একাধিক মোড় বা টার্ন ব্যবহার করে S তৈরি করো।</p>
+                <span class="lang-en">Master turning to draw the curvy letter S.</span>
+                <a href="m-logo-letter-s.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-vector-square"></i></div>
+                <h3>মডিউল ৮: Letter W আঁকা</h3>
+                <p>দুটো V জোড়া লাগিয়ে W তৈরি করার লজিক শেখো।</p>
+                <span class="lang-en">Logic of joining V + V to make W.</span>
+                <a href="m-logo-letter-w.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card">
+                <div class="icon-box"><i class="fas fa-palette"></i></div>
+                <h3>মডিউল ৯: কালার ফান (Color)</h3>
+                <p>সবুজ, লাল ও নীল রঙ দিয়ে কোডিং রাঙিয়ে তোলো।</p>
+                <span class="lang-en">Change Pen Colors (SETPC) for your art.</span>
+                <a href="m-logo-color.html" class="btn-enter">শুরু করো / Start</a>
+            </div>
+
+            <div class="logo-card special-card">
+                <div class="icon-box"><i class="fas fa-trophy"></i></div>
+                <h3>মডিউল ১০: ফাইনাল প্রজেক্ট</h3>
+                <p>সব কমান্ড মিলিয়ে "MSW Logo" প্রজেক্টটি তৈরি করো।</p>
+                <span class="lang-en">Complete your Final MSW Logo Project.</span>
+                <a href="m-logo-final.html" class="btn-enter" style="background: #d4af37;">চ্যালেঞ্জ নাও</a>
+            </div>
+
+            <div class="logo-card command-card" style="grid-column: span 1;">
+                <div class="icon-box"><i class="fas fa-list-ol"></i></div>
+                <h3>মডিউল ১১: কমান্ড লিস্ট</h3>
+                <p>সব কমান্ডের তালিকা এবং তাদের কাজ এক নজরে।</p>
+                <span class="lang-en">The Ultimate LOGO Command List for Kids.</span>
+                <a href="m-logo-commands.html" class="btn-enter" style="background: var(--logo-blue);">এক নজরে দেখো</a>
+            </div>
+	     <div class="logo-card command-card" style="grid-column: span 1;">
+                <div class="icon-box"><i class="fas fa-list-ol"></i></div>
+                <h3>মডিউল ১২: মাস্টার কুইজ</h3>
+                <p>১৫টি প্রশ্ন পড়ে নাও, সব পড়া শেষ মক টেস্ট শুরু কর।</p>
+                <span class="lang-en">The Ultimate LOGO Command List for Kids.</span>
+                <a href="m-logo-quiz.htmlm-logo-quiz.html" class="btn-enter" style="background: var(--logo-blue);">এক নজরে দেখো</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
