@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #ffffff; padding: 25px; line-height: 1.6; color: #333; }
+        .module-header { 
+            background: linear-gradient(135deg, #d4af37, #b8860b); 
+            color: white; padding: 35px; border-radius: 20px; text-align: center; margin-bottom: 35px; 
+            box-shadow: 0 10px 25px rgba(184, 134, 11, 0.3);
+        }
+        .project-card { 
+            background: #fffcf0; border: 2px solid #fde68a; border-radius: 20px; padding: 30px; 
+            margin-bottom: 30px; position: relative; overflow: hidden;
+        }
+        .project-card::before {
+            content: "\f091"; font-family: "Font Awesome 5 Free"; font-weight: 900;
+            position: absolute; top: -20px; right: -20px; font-size: 10rem; color: #fef3c7; z-index: 0;
+        }
+        .content { position: relative; z-index: 1; }
+        .lang-en { color: #92400e; font-style: italic; font-weight: 500; display: block; margin-top: 5px; border-top: 1px dashed #fcd34d; padding-top: 5px; }
+        
+        h3 { color: #854d0e; display: flex; align-items: center; font-size: 1.5rem; }
+        h3 i { margin-right: 12px; }
+
+        .mission-box { 
+            background: white; border-radius: 15px; padding: 20px; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-top: 20px;
+        }
+        .step-badge { 
+            background: #d4af37; color: white; padding: 5px 15px; 
+            border-radius: 20px; font-size: 0.9rem; font-weight: bold; margin-right: 10px;
+        }
+
+        .final-code-box { 
+            background: #1e293b; color: #e2e8f0; padding: 25px; 
+            border-radius: 15px; font-family: 'Courier New', monospace; 
+            line-height: 1.5; margin-top: 20px; border-left: 8px solid #d4af37;
+        }
+
+        .congrats-footer { text-align: center; margin-top: 40px; padding: 20px; background: #f0fdf4; border-radius: 15px; }
+
+        .back-btn { 
+            display: inline-block; padding: 12px 25px; background: #1a365d; 
+            color: white; text-decoration: none; border-radius: 30px; 
+            margin-top: 20px; transition: 0.3s; font-weight: 600;
+        }
+        .back-btn:hover { background: #d4af37; transform: scale(1.05); }
+    </style>
+</head>
+<body>
+
+    <div class="module-header">
+        <h1>Module 10: Final Logo Masterpiece</h1>
+        <h2>মডিউল ১০: ফাইনাল লোগো মাস্টারপিস 🏆</h2>
+	<p>Super Success Computer Education Center (SSCEC) – নতুন যুগের দিশারি</p>
+    </div>
+
+    <div class="project-card">
+        <div class="content">
+            <h3><i class="fas fa-star"></i> The Grand Mission (আজকের মহৎ লক্ষ্য)</h3>
+            <p>আজ আমরা যা যা শিখেছি সব একসাথে ব্যবহার করবো। আমাদের আজকের মিশন হলো— তিনটি ভিন্ন রঙের অক্ষর (M, S, W) সুন্দর ফাঁকা জায়গা রেখে পাশাপাশি আঁকা।
+            <span class="lang-en">Today we combine everything! Your mission is to draw three colored letters (M, S, W) side-by-side with proper spacing.</span></p>
+        </div>
+    </div>
+
+    <div class="mission-box">
+        <h3><i class="fas fa-list-check"></i> Project Requirements (প্রজেক্টের শর্তাবলী)</h3>
+        <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 15px;"><span class="step-badge">1</span> <b>M drawing:</b> নীল রঙে আঁকো (Use SETPC 1).</li>
+            <li style="margin-bottom: 15px;"><span class="step-badge">2</span> <b>Proper Space:</b> 'PU' ব্যবহার করে ফাঁকা জায়গা তৈরি করো।</li>
+            <li style="margin-bottom: 15px;"><span class="step-badge">3</span> <b>S drawing:</b> সবুজ রঙে আঁকো (Use SETPC 2).</li>
+            <li style="margin-bottom: 15px;"><span class="step-badge">4</span> <b>W drawing:</b> লাল রঙে আঁকো (Use SETPC 4).</li>
+        </ul>
+    </div>
+
+    <div class="content-box" style="margin-top: 30px;">
+        <h3><i class="fas fa-code"></i> Reference Code Hint (কোড ইঙ্গিত)</h3>
+        <p>নিচে একটি ছোট ইঙ্গিত দেওয়া হলো কীভাবে তুমি শুরু করতে পারো:</p>
+        <div class="final-code-box">
+            CS <br>
+            SETPC 1 (Blue for M) <br>
+            ; ... Draw M here ... <br>
+            PU RT 90 FD 100 LT 90 PD (Move to next position) <br>
+            SETPC 2 (Green for S) <br>
+            ; ... Draw S here ...
+        </div>
+    </div>
+
+    <div class="congrats-footer">
+        <h2 style="color: #16a34a;"><i class="fas fa-certificate"></i> Congratulations!</h2>
+        <p>তুমি সফলভাবে লোগো প্রোগ্রামিংয়ের ১০টি ধাপ সম্পন্ন করেছ। তুমি এখন একজন <b>"Junior Turtle Coder"</b>!
+        <span class="lang-en">You have successfully completed 10 modules. You are now a Junior Turtle Coder!</span></p>
+        <button onclick="window.print()" class="back-btn" style="background: #16a34a;">প্রজেক্ট প্রিন্ট করো</button>
+    </div>
+
+    <center>
+        <a href="logo-home.html" class="back-btn"><i class="fas fa-home"></i> Back to Home</a>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #ffffff; padding: 25px; line-height: 1.6; color: #333; }
+        .module-header { 
+            background: linear-gradient(135deg, #6366f1, #4338ca); 
+            color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 35px; 
+        }
+        .content-box { 
+            background: #eef2ff; border-radius: 15px; padding: 25px; 
+            border: 1px solid #e0e7ff; margin-bottom: 25px; 
+        }
+        .lang-en { color: #3730a3; font-style: italic; font-weight: 500; display: block; margin-top: 5px; border-top: 1px dashed #c7d2fe; padding-top: 5px; }
+        
+        h3 { color: #312e81; border-bottom: 2px solid #c7d2fe; padding-bottom: 10px; display: flex; align-items: center; }
+        h3 i { margin-right: 10px; }
+
+        .program-section { 
+            display: flex; flex-wrap: wrap; gap: 20px; margin-top: 25px; 
+        }
+        .code-window { 
+            flex: 1; min-width: 300px; background: #1e293b; color: #f8fafc; 
+            padding: 25px; border-radius: 15px; font-family: 'Courier New', monospace; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); border-top: 10px solid #4338ca;
+        }
+        .explanation-window { 
+            flex: 1; min-width: 300px; background: white; 
+            padding: 20px; border-radius: 15px; border: 1px solid #e0e7ff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .step-list { list-style: none; padding: 0; }
+        .step-list li { margin-bottom: 12px; padding-left: 30px; position: relative; }
+        .step-list li::before { 
+            content: "\f0a2"; font-family: "Font Awesome 5 Free"; font-weight: 900; 
+            position: absolute; left: 0; color: #6366f1; 
+        }
+
+        .zigzag-box { 
+            background: #fff7ed; border: 2px solid #fb923c; 
+            padding: 15px; border-radius: 10px; margin-top: 20px; text-align: center;
+        }
+
+        .back-btn { 
+            display: inline-block; padding: 12px 25px; background: #1a365d; 
+            color: white; text-decoration: none; border-radius: 30px; 
+            margin-top: 20px; transition: 0.3s; font-weight: 600;
+        }
+        .back-btn:hover { background: #6366f1; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="module-header">
+        <h1>Module 6: Drawing Letter M</h1>
+        <h2>মডিউল ৬: Letter M আঁকা ✍️</h2>
+	<p>Super Success Computer Education Center (SSCEC) – নতুন যুগের দিশারি</p>
+    </div>
+
+    <div class="content-box">
+        <h3><i class="fas fa-wave-square"></i> Learning Zigzag Lines (জিগজ্যাগ লাইন শেখা)</h3>
+        <p>"M" অক্ষরটি আঁকার জন্য আমাদের টারটেলকে কোণাকুণি বা জিগজ্যাগ পথে চালাতে হবে। এর জন্য আমরা বিশেষ কিছু অ্যাঙ্গেল বা কোণ (যেমন 135) ব্যবহার করবো।
+        <span class="lang-en">To draw the letter "M", we need to move the Turtle in diagonal or zigzag lines using special angles like 135.</span></p>
+    </div>
+
+    <div class="program-section">
+        <div class="code-window">
+            <div style="color: #94a3b8; margin-bottom: 10px;">// Type these commands:</div>
+            PU <br>
+            BK 150 <br>
+            PD <br>
+            FD 100 <br>
+            RT 135 <br>
+            FD 70 <br>
+            LT 90 <br>
+            FD 70 <br>
+            RT 135 <br>
+            FD 100
+        </div>
+
+        <div class="explanation-window">
+            <h3><i class="fas fa-brain"></i> Logic (লজিক ব্যাখ্যা)</h3>
+            <ul class="step-list">
+                <li><strong>উপরে যাওয়া:</strong> FD 100 দিয়ে বাম দিকের সোজা লাইনটি আঁকা হয়।</li>
+                <li><strong>কোণা তৈরি:</strong> RT 135 টারটেলকে কোণাকুণি নিচে নামার জন্য প্রস্তুত করে।</li>
+                <li><strong>জিগজ্যাগ:</strong> মাঝখানের ছোট দুটি লাইন (V শেপ) তৈরি করা হয়।</li>
+                <li><strong>নিচে নামা:</strong> শেষে সোজা নিচে নেমে M পূর্ণ করা হয়।</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="zigzag-box">
+        <strong>💡 মগজ ধোলাই (Brain Teaser):</strong> 
+        খেয়াল করো, এখানে আমরা <b>90</b> এর বদলে <b>135</b> এবং <b>70</b> ব্যবহার করেছি। কারণ M এর মাঝের অংশটি একটু বেশি বাঁকা থাকে!
+        <span class="lang-en" style="color: #9a3412; font-style: italic; border: none; padding: 0;">Notice we used 135 instead of 90 to get that perfect zigzag shape!</span>
+    </div>
+
+    <div class="content-box" style="margin-top: 30px;">
+        <h3><i class="fas fa-pencil-alt"></i> Try It Yourself (নিজে করো)</h3>
+        <p>১. লোগো স্ক্রিন পরিষ্কার করো (CS)।<br>
+           ২. উপরের প্রোগ্রামটি কমান্ড বক্সে লিখে দেখো "M" তৈরি হয় কি না।
+        <span class="lang-en">1. Clear the screen (CS).<br>2. Type the program above and see if the "M" appears!</span></p>
+    </div>
+
+    <a href="logo-home.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Logo Dashboard</a>
+
+</body>
+</html>

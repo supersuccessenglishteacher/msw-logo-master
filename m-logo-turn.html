@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #ffffff; padding: 25px; line-height: 1.6; color: #333; }
+        .module-header { 
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9); 
+            color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 35px; 
+        }
+        .content-box { 
+            background: #f5f3ff; border-radius: 15px; padding: 25px; 
+            border: 1px solid #ddd6fe; margin-bottom: 25px; 
+        }
+        .lang-en { color: #5b21b6; font-style: italic; font-weight: 500; display: block; margin-top: 5px; border-top: 1px dashed #c4b5fd; padding-top: 5px; }
+        
+        h3 { color: #4c1d95; border-bottom: 2px solid #c4b5fd; padding-bottom: 10px; display: flex; align-items: center; }
+        h3 i { margin-right: 10px; }
+
+        .command-grid { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 20px; margin-top: 25px; 
+        }
+        .command-card { 
+            background: white; padding: 20px; border-radius: 15px; 
+            border-left: 6px solid #8b5cf6; box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .command-name { font-family: 'Courier New', Courier, monospace; font-weight: bold; color: #7c3aed; font-size: 1.3rem; }
+
+        .activity-box { background: #fff7ed; border: 2px dashed #fb923c; padding: 20px; border-radius: 15px; margin-top: 25px; }
+
+        .back-btn { 
+            display: inline-block; padding: 12px 25px; background: #1a365d; 
+            color: white; text-decoration: none; border-radius: 30px; 
+            margin-top: 20px; transition: 0.3s; font-weight: 600;
+        }
+        .back-btn:hover { background: #8b5cf6; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="module-header">
+        <h1>Module 3: Turtle Takes a Turn</h1>
+        <h2>মডিউল ৩: টারটেল মোড় নেয় ↩️↪️</h2>
+	<p>Super Success Computer Education Center (SSCEC) – নতুন যুগের দিশারি</p>
+    </div>
+
+    <div class="content-box">
+        <h3><i class="fas fa-sync-alt"></i> Left and Right (ডানে ও বামে ঘোরা)</h3>
+        <p>টারটেলকে ডানে বা বামে ঘোরানোর জন্য আমরা <strong>Angle</strong> বা কোণ ব্যবহার করি। '90' নম্বরটি টারটেলকে একদম সোজা থেকে পাশে ঘুরিয়ে দেয়।
+        <span class="lang-en">To turn the Turtle left or right, we use angles. The number '90' turns the Turtle exactly to the side.</span></p>
+    </div>
+
+    <div class="command-grid">
+        <div class="command-card">
+            <span class="command-name">RT 90 (Right Turn)</span>
+            <p>টারটেলকে ৯০০ কোণে ডানে ঘুরিয়ে দেয়।
+            <span class="lang-en">Turns the Turtle 90 degrees to the right.</span></p>
+        </div>
+
+        <div class="command-card">
+            <span class="command-name">LT 90 (Left Turn)</span>
+            <p>টারটেলকে ৯০০ কোণে বামে ঘুরিয়ে দেয়।
+            <span class="lang-en">Turns the Turtle 90 degrees to the left.</span></p>
+        </div>
+    </div>
+
+    <div class="activity-box">
+        <h3><i class="fas fa-pencil-ruler"></i> Activity: Drawing "L" (L আকার আঁকি)</h3>
+        <p>টারটেল দিয়ে ইংরেজী <strong>"L"</strong> অক্ষরটি আঁকার জন্য নিচের কমান্ডগুলো টাইপ করো:<br><br>
+           <code>FD 100</code> (সোজা উপরে যাও)<br>
+           <code>BK 100</code> (আবার নিচে ফিরে এসো)<br>
+           <code>RT 90</code> (ডানে মোড় নাও)<br>
+           <code>FD 60</code> (ডানে এগিয়ে যাও)
+        <span class="lang-en">Type these commands to draw the letter "L":<br>FD 100 -> BK 100 -> RT 90 -> FD 60.</span></p>
+    </div>
+
+    <div class="content-box" style="margin-top: 30px; border-left: 5px solid #22c55e;">
+        <h3><i class="fas fa-brain"></i> Think & Try (ভেবে দেখো)</h3>
+        <p>টারটেলকে যদি পুরো উল্টো দিকে ঘুরাতে চাও, তবে কত নম্বর ব্যবহার করবে? <br> (ইঙ্গিত: ৯০০ + ৯০০ = ১৮০০)
+        <span class="lang-en">What number would you use to turn the Turtle completely around? (Hint: 90 + 90 = 180).</span></p>
+    </div>
+
+    <a href="logo-home.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Logo Dashboard</a>
+
+</body>
+</html>

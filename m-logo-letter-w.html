@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #ffffff; padding: 25px; line-height: 1.6; color: #333; }
+        .module-header { 
+            background: linear-gradient(135deg, #f43f5e, #be123c); 
+            color: white; padding: 30px; border-radius: 20px; text-align: center; margin-bottom: 35px; 
+        }
+        .content-box { 
+            background: #fff1f2; border-radius: 15px; padding: 25px; 
+            border: 1px solid #ffe4e6; margin-bottom: 25px; 
+        }
+        .lang-en { color: #9f1239; font-style: italic; font-weight: 500; display: block; margin-top: 5px; border-top: 1px dashed #fecdd3; padding-top: 5px; }
+        
+        h3 { color: #881337; border-bottom: 2px solid #fecdd3; padding-bottom: 10px; display: flex; align-items: center; }
+        h3 i { margin-right: 10px; }
+
+        .logic-container { 
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 25px; margin-top: 25px; 
+        }
+        .code-window { 
+            background: #1e293b; color: #fb7185; 
+            padding: 25px; border-radius: 20px; font-family: 'Courier New', monospace; 
+            font-size: 1.1rem; box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-bottom: 5px solid #f43f5e;
+        }
+        .formula-card { 
+            background: white; padding: 25px; border-radius: 20px; 
+            border: 2px solid #f43f5e; text-align: center;
+        }
+        .formula-text { font-size: 2rem; font-weight: bold; color: #be123c; margin: 15px 0; }
+
+        .back-btn { 
+            display: inline-block; padding: 12px 25px; background: #1a365d; 
+            color: white; text-decoration: none; border-radius: 30px; 
+            margin-top: 20px; transition: 0.3s; font-weight: 600;
+        }
+        .back-btn:hover { background: #f43f5e; color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="module-header">
+        <h1>Module 8: Drawing Letter W</h1>
+        <h2>মডিউল ৮: Letter W আঁকা ✍️</h2>
+	<p>Super Success Computer Education Center (SSCEC) – নতুন যুগের দিশারি</p>
+    </div>
+
+    <div class="content-box">
+        <h3><i class="fas fa-shapes"></i> The Double-V Logic (দুটো V-এর জাদু)</h3>
+        <p>অক্ষর 'W' আঁকা খুব সহজ যদি তুমি চিন্তা করো এটি আসলে দুটি 'V' অক্ষর পাশাপাশি বসানো। কোডিংয়ের মাধ্যমে আমরা টারটেলকে দিয়ে এই চমৎকার আকৃতিটি তৈরি করবো।
+        <span class="lang-en">Drawing 'W' is easy if you think of it as two 'V' shapes joined together. Let's use code to make it!</span></p>
+    </div>
+
+    <div class="logic-container">
+        <div class="formula-card">
+            <h3><i class="fas fa-equals"></i> The Formula</h3>
+            <div class="formula-text">V + V = W</div>
+            <p>টারটেলকে একবার বামে ও একবার ডানে কোণাকুণি চালালেই W তৈরি হবে।
+            <span class="lang-en">Turn left then right diagonally to get that sharp W shape.</span></p>
+        </div>
+
+        <div class="code-window">
+            <span style="color: #94a3b8;">; Copy this to MSW Logo</span><br><br>
+            PU <br>
+            FD 80 <br>
+            PD <br>
+            LT 90 <br>
+            FD 100 <br>
+            RT 150 <br>
+            FD 70 <br>
+            LT 120 <br>
+            FD 70 <br>
+            RT 150 <br>
+            FD 100
+        </div>
+    </div>
+
+    <div class="content-box" style="margin-top: 30px; background: #fff7ed; border-color: #ffedd5;">
+        <h3><i class="fas fa-brain"></i> Secret Tip (গোপন টিপস)</h3>
+        <p>খেয়াল করো, এখানে আমরা <b>RT 150</b> এবং <b>LT 120</b> ব্যবহার করেছি যাতে অক্ষরটি একদম ধারালো (Sharp) দেখায়।
+        <span class="lang-en">We used 150 and 120 degrees to make the 'W' look sharp and perfect!</span></p>
+    </div>
+
+    <div class="content-box">
+        <h3><i class="fas fa-tasks"></i> Activity (আজকের কাজ)</h3>
+        <p>লোগো স্ক্রিন পরিষ্কার করে (CS) উপরের কমান্ডগুলো লিখে তোমার নিজের 'W' তৈরি করো এবং স্যারকে দেখাও!
+        <span class="lang-en">Clear the screen (CS) and type the commands to create your own 'W'. Show it to your Sir!</span></p>
+    </div>
+
+    <a href="logo-home.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Logo Dashboard</a>
+
+</body>
+</html>
